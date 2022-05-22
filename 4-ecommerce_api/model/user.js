@@ -22,7 +22,16 @@ password: {
     type: String,
     minlength: 6,
     required: true
- }
+ },
+ 
+ role: {
+    type: String,
+    default: "user"
+},
+refreshToken:{
+    type: String,
+    default: ""
+}
 },
 
 {

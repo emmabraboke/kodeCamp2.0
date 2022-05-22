@@ -5,10 +5,12 @@ require("dotenv").config()
 
 const userRoute = require("./route/userRoute")
 const productRoute = require("./route/productRoute")
+const cookieParser = require("cookie-parser")
 
 
 //middleware
 app.use(express.json())
+app.use(cookieParser())
 
 //routes
 app.use(userRoute)
